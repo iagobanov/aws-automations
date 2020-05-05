@@ -5,7 +5,6 @@ import time
 from utils.json_writer import json_writer
 from utils.connection import connect_aws_service
 
-#Delete all the DNS records used to the green Env.
 def get_ips(regions):
     for region in regions:
         client = connect_aws_service(region, 'ec2')

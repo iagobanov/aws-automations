@@ -6,7 +6,7 @@ Scripts to help retrieve AWS information such as Route53 domains and public IP a
 # Installation
 
 ```bash
-cd insightvm-automations/aws
+cd aws-automations/aws
 . venv/bin/activate
 pip install -r requirements.txt
 ```
@@ -14,6 +14,6 @@ pip install -r requirements.txt
 # Usage
 ```bash
 cd aws/
-python main.py >> output/domains.txt 
+python main.py >> domains.txt 
 ls output/
 ```

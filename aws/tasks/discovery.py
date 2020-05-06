@@ -22,9 +22,13 @@ def get_ips(regions):
         for NetworkInterfaces in response:
             NetworkInterfaces = response.get('NetworkInterfaces')
             for details in NetworkInterfaces:
-                try:  
-                    PublicInfo.append(details.get('Association').get('PublicIp'))
+                try:
+                    if details.get('Association').get('PublicIp') in PublicInfo:
+                       continue     
+                    else:
+                       PublicInfo.append(details.get('Association').get('PublicIp'))
                 except:
                     pass
+
 
         json_writer('output/' + region + '-info.json', PublicInfo)

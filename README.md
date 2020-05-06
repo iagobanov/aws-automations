@@ -1,6 +1,6 @@
 # Get public IP's and DNS from AWS Accounts
 
-Scripts to help retrieve AWS information such as Route53 domains and public IP addresses, and create assets in InsightVM via its API.
+Scripts to help retrieve AWS information such as Route53 domains and public IP addresses
 - - - - - -
 
 # Installation
